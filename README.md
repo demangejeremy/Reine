@@ -1,3 +1,3 @@
-# Algorithme Reine
+# Reine
 
-Classification automatisée et organisation interne du discours.
+Algorithme de classification automatisée et organisation interne du discours.
