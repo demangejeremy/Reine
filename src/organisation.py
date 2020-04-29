@@ -139,5 +139,3 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
       for ind in order_centroids[i, :NB_MOTS]:
           print('- %s' % terms[ind]),
       print("")
-
-call_reine()
