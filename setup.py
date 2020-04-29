@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 # Mise en place du setup
 setuptools.setup(
      name='reine',  
-     version='0.5',
+     version='0.6',
      scripts=['reine'] ,
      author="Jérémy DEMANGE",
      author_email="jeremy@fakir.io",
