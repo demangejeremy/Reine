@@ -13,7 +13,7 @@ with open("README.md", "r") as fh:
 # Mise en place du setup
 setuptools.setup(
      name='reine',  
-     version='0.1',
+     version='0.2',
      scripts=['reine'] ,
      author="Jérémy DEMANGE",
      author_email="jeremy@fakir.io",
@@ -21,6 +21,9 @@ setuptools.setup(
      long_description=long_description,
      long_description_content_type="text/markdown",
      url="https://github.com/demangejeremy/reine",
+     install_requires=[
+        'spacy', 'nltk', 'numpy', 'requests', 'click'
+     ],
      packages=setuptools.find_packages(),
      classifiers=[
          "Programming Language :: Python :: 3",
