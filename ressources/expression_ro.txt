@@ -1,0 +1,137 @@
+a face cu ochiul	a_face_cu_ochiul	ver
+pune la cale	pune_la_cale	ver
+o lua la fuga	o_lua_la_fuga	ver
+lua la sănătoasa	lua_la_sănătoasa	ver
+duce dorul	duce_dorul	ver
+spală putina	spală_putina	ver
+bir cu fugiții	bir_cu_fugiții	ver
+lăsa balta	lăsa_balta	ver
+ține piept	ține_piept	ver
+lua câmpii	lua_câmpii	ver
+rupe tăcerea	rupe_tăcerea	ver
+sparge gheața	sparge_gheața	ver
+bagă mințile in cap	bagă_mințile_in_cap	ver
+dă de-a dura	dă_de-a_dura	ver
+duce de-a berbeleacul	duce_de-a_berbeleacul	ver
+lua razna	lua_razna	ver
+face lata	face_lata	ver
+trage pe sfoara	trage_pe_sfoara	ver
+baga de seama	baga_de_seama	ver
+dă de știre	dă_de_știre	ver
+sfoara-n tara	sfoara-n_tara	ver
+aduce aminte	aduce_aminte	ver
+lua aminte	lua_aminte	ver
+tine minte	tine_minte	ver
+a da ortul popii	a_da_ortul_popii	ver
+dă coltul	dă_coltul	ver
+apa la moara	apa_la_moara	ver
+apa la șoareci	apa_la_șoareci	ver
+dă ocol	dă_ocol	ver
+dă buzna	dă_buzna	ver
+dă foc	dă_foc	ver
+dă pe brazda	dă_pe_brazda	ver
+dă in vileag	dă_in_vileag	ver
+bate apa in piua	bate_apa_in_piua	ver
+ pe ulei	_pe_ulei	ver
+se face foc si para	se_face_foc_si_para	ver
+ verzi si uscate	_verzi_si_uscate	ver
+bate joc	bate_joc	ver
+bate capul	bate_capul	ver
+cuvântul înapoi	cuvântul_înapoi	ver
+părea rău	părea_rău	ver
+face bine	face_bine	ver
+aducere aminte	aducere_aminte	nom
+luare aminte	luare_aminte	nom
+ținere de minte	ținere_de_minte	nom
+punere la cale	punere_la_cale	nom
+băgare de seamă	băgare_de_seamă	nom
+luare in primire	luare_in_primire	nom
+bătaie de cap	bătaie_de_cap	nom
+bătaie de joc	bătaie_de_joc	nom
+luare de cuvânt	luare_de_cuvânt	nom
+părere de rău	părere_de_rău	nom
+facere de bine	facere_de_bine	nom
+tragere de inima	tragere_de_inima	nom
+dare de seama	dare_de_seama	nom
+de geniu	de_geniu	adj
+în lege	în_lege	adj
+de seamă	de_seamă	adj
+de folos	de_folos	adj
+cu scaun la cap	cu_scaun_la_cap	adj
+de bani gata	de_bani_gata	adj
+cu capul in nori	cu_capul_in_nori	adj
+luat de suflet	luat_de_suflet	adj
+bătător la ochi	bătător_la_ochi	adj
+al naibii	al_naibii	adj
+cel din urmă	cel_din_urmă	adj
+toți unul și unul	toți_unul_și_unul	adj
+într-o ureche	într-o_ureche	adj
+de isprava	de_isprava	adj
+din topor	din_topor	adj
+numai piele si os	numai_piele_si_os	adj
+dintr-o bucata	dintr-o_bucata	adj
+ca vai de el	ca_vai_de_el	adj
+întors pe dos	întors_pe_dos	adj
+in putere	in_putere	adj
+cu dare de mănă	cu_dare_de_mănă	adj
+tobă de carte	tobă_de_carte	adj
+cu cântec	cu_cântec	adj
+iute la mânie	iute_la_mânie	adj
+de moment	de_moment	adj
+fără căpătâi	fără_căpătâi	adj
+fără rost	fără_rost	adj
+cu judecată	cu_judecată	adj
+de căpetenie	de_căpetenie	adj
+de nimic	de_nimic	adj
+fel de fel	fel_de_fel	adj
+din loc in loc	din_loc_in_loc	adv
+de-a dreptul	de-a_dreptul	adv
+de-a curmezișul	de-a_curmezișul	adv
+în fata	în_fata	adv
+în spate	în_spate	adv
+ici-colo	ici-colo	adv
+de dimineața	de_dimineața	adv
+din când in când	din_când_in_când	adv
+zi de zi	zi_de_zi	adv
+clipă de clipă	clipă_de_clipă	adv
+din nou	din_nou	adv
+în veci	în_veci	adv
+pe neașteptate	pe_neașteptate	adv
+in silă	in_silă	adv
+in grabă	in_grabă	adv
+de pe rost	de_pe_rost	adv
+vrând nevrând	vrând_nevrând	adv
+pe negândite	pe_negândite	adv
+cu siguranță	cu_siguranță	adv
+cu certitudine	cu_certitudine	adv
+de buna seama	de_buna_seama	adv
+fără îndoială	fără_îndoială	adv
+fără doar si poate că	fără_doar_si_poate_că	adv
+pentru ca	pentru_ca	con
+pentru ca să	pentru_ca_să	con
+fără să	fără_să	con
+după cum	după_cum	con
+măcar că	măcar_că	con
+măcar să	măcar_să	con
+măcar de	măcar_de	con
+din cauza că	din_cauza_că	con
+din pricina că	din_pricina_că	con
+in scopul ca	in_scopul_ca	con
+înainte să	înainte_să	con
+în fața	în_fața	prep
+în spatele	în_spatele	prep
+în jurul	în_jurul	prep
+de-a dreptul	de-a_dreptul	prep
+de-a lungul	de-a_lungul	prep
+de-a latul	de-a_latul	prep
+în urma	în_urma	prep
+din pricina	din_pricina	prep
+față de	față_de	prep
+în loc de	în_loc_de	prep
+alături de	alături_de	prep
+afara de	afara_de	prep
+în afara	în_afara	prep
+în jur de	în_jur_de	prep
+privitor la	privitor_la	prep
+la un loc cu	la_un_loc_cu	prep
+o data cu	o_data_cu	prep
