@@ -1,3 +1,3 @@
-<h1 align="center">Reine<br>👸</h1>
+<h1 align="center">Reine<br>👸<br>Classification automatisée et organisation interne du discours.</h1>
 
-Algorithme de classification automatisée et organisation interne du discours.
+## Installation
