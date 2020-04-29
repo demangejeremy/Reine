@@ -58,7 +58,7 @@ except:
   pass
 
 # Importation librairie locale
-from iramuteq_to_list import transform
+from src.iramuteq_to_list import transform
 
 # Appel de la fonction principale
 def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB_MOTS = 10, NB_ITERATIONS = 100, NB_INIT = 1):
