@@ -1,4 +1,5 @@
 <div align="center"><h1>Reine<br>👸</h1><br>Classification automatisée et organisation interne du discours.</div>
+<br>
 
 ## Installation
 
@@ -19,3 +20,7 @@ pip install --upgrade reine
 ## Utilisation
 
 Plus d'informations bientôt.
+
+## Crédits 
+
+Inspiré par le logiciel Alceste et par la méthode Reinert inclus par Pierre Ratinaud dans Iramuteq, cette librairie se veut entièrement portée sur Python pour une utilisation plus simple et plus performante.
