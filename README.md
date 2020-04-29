@@ -23,4 +23,4 @@ Plus d'informations bientôt.
 
 ## Crédits 
 
-Inspiré par le logiciel Alceste et par la méthode Reinert inclus par Pierre Ratinaud dans Iramuteq, cette librairie se veut entièrement portée sur Python pour une utilisation plus simple et plus performante.
+Développé par Jérémy DEMANGE et inspiré par le logiciel Alceste et par la méthode Reinert inclus par Pierre Ratinaud dans Iramuteq, cette librairie se veut entièrement portée sur Python pour une utilisation plus simple et plus performante.
