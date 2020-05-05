@@ -320,7 +320,7 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
   generate_html(saveTerms, DOCUMENT_LINK)
 
   # Affichage des phrases correspondantes
-  numeroDocument = 2
+  numeroDocument = 50
   Y = vectorizer.transform([newDoc[numeroDocument]])
   prediction = model.predict(Y)
   print(f"La phrase suivante : '{documents[numeroDocument]}' correspond à l'arbre {str(prediction[0])}.")
@@ -328,3 +328,8 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
 
 # Appel de la fonction
 call_reine(DOCUMENT_LINK = "/Users/jeremydemange/Documents/GitHub/Reine/test/new/Iramuteq_Comptes_Academie.txt", LEM = True, NB_ARBRES = 3, NB_MOTS = 10, NB_ITERATIONS = 1000, NB_INIT = 1)
+
+# 
+# Dernier script :
+# La phrase suivante : '#nationapprenante Le journal du petit confiné @ClgDiderot n°3 : Comment nous vivons l'école à la maison... Un partenariat @maCommune / @acbesancon' correspond à l'arbre 1.
+# 
