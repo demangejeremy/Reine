@@ -9,12 +9,13 @@ import sys
 
 # Importations SK Learn
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans, MiniBatchKMeans
 from sklearn.metrics import adjusted_rand_score
 
 # Importation librairie locale
 from iramuteq_to_list import transform
-
+import unidecode
+import joblib
 
 # Générer un HTML
 def generate_html(terms, doclink):
@@ -230,7 +231,7 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
   # Info 
   i = 1
 
-  # Si lematise
+  # Si lemmatise
   if LEM:
     # Charger spacy
     import spacy
@@ -243,9 +244,13 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
       myText = ""
       tok = nlp(d)
       for t in tok:
-        if t.is_alpha:
-          myText += t.lemma_
-          myText += " "
+        if t.is_alpha and t.vocab:
+          theText = t.lemma_
+          theText = theText.lower()
+          theText = unidecode.unidecode(theText)
+          if "amp" not in theText: 
+            myText += theText
+            myText += " "
       newDoc.append(myText)
   else:
     # Charger spacy
@@ -270,8 +275,7 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
   
   # Fréquence des mots
   freq = []
-  # freq = words_frequencies(newDoc)
-  # freq = removeStopwords(freq, final_stopwords_list)
+  freq = words_frequencies(newDoc)
   print(freq)
 
   # Vectorisation
@@ -279,8 +283,11 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
   X = vectorizer.fit_transform(newDoc)
 
   # Création des models
-  model = KMeans(n_clusters=NB_ARBRES, init='k-means++', max_iter=NB_ITERATIONS, n_init=NB_INIT)
+  model = MiniBatchKMeans(n_clusters=NB_ARBRES, init='k-means++', max_iter=NB_ITERATIONS, n_init=NB_INIT)
   model.fit(X)
+
+  # Sauvegarder le modèle
+  joblib.dump(model, DOCUMENT_LINK.replace(".txt", "_model.sav"))
 
   # Affichage des résultats
   print("DEBUG")
@@ -312,6 +319,12 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
   # Générer le HTML
   generate_html(saveTerms, DOCUMENT_LINK)
 
+  # Affichage des phrases correspondantes
+  numeroDocument = 2
+  Y = vectorizer.transform([newDoc[numeroDocument]])
+  prediction = model.predict(Y)
+  print(f"La phrase suivante : '{documents[numeroDocument]}' correspond à l'arbre {str(prediction[0])}.")
+
 
 # Appel de la fonction
-call_reine(DOCUMENT_LINK = "/Users/jeremydemange/Documents/GitHub/Reine/test/cpedagogique.txt", LEM = True, NB_ARBRES = 9, NB_MOTS = 8, NB_ITERATIONS = 100, NB_INIT = 1)
+call_reine(DOCUMENT_LINK = "/Users/jeremydemange/Documents/GitHub/Reine/test/new/Iramuteq_Comptes_Academie.txt", LEM = True, NB_ARBRES = 3, NB_MOTS = 10, NB_ITERATIONS = 1000, NB_INIT = 1)
