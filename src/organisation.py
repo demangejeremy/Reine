@@ -337,4 +337,4 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
 
 
 # Appel de la fonction
-call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB_MOTS = 10, NB_ITERATIONS = 100, NB_INIT = 1)
+#call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB_MOTS = 10, NB_ITERATIONS = 100, NB_INIT = 1)
