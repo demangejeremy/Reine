@@ -324,13 +324,13 @@ def call_reine(DOCUMENT_LINK = "./test/test2.txt", LEM = True, NB_ARBRES = 4, NB
 
   # Réalisation de la loop
   for i in range(NB_ARBRES):
+    classterms = []
     print(f"Arbre {str(i+1)}:")
     for ind in order_centroids[i, :NB_MOTS]:
       print('- %s' % terms[ind])
-      terms.append(terms[ind])
-    saveTerms.append(terms)
-    terms = []
-    print("")
+      classterms.append(terms[ind])
+    saveTerms.append(classterms)
+    #print("")
 
   # Générer le HTML
   generate_html(saveTerms, DOCUMENT_LINK)
